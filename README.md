@@ -1,1 +1,1 @@
-# OpenShift Templates for lazar service
+# OpenShift templates for lazar service
