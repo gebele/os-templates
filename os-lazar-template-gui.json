@@ -53,7 +53,7 @@
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
       "metadata": {
-        "name": "mongodb",
+        "name": "mongodb"
       },
       "spec": {
         "strategy": {
@@ -106,7 +106,7 @@
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
       "metadata": {
-        "name": "rserve",
+        "name": "rserve"
       },
       "spec": {
         "strategy": {
@@ -159,7 +159,7 @@
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
       "metadata": {
-        "name": "lazar-gui",
+        "name": "lazar-gui"
       },
       "spec": {
         "strategy": {
@@ -188,7 +188,7 @@
                 "image": "docker.io/gebele/lazar-gui:latest",
                 "ports": [
                   {
-                    "containerPort": 8088,
+                    "containerPort": 8090,
                     "protocol": "TCP"
                   }
                 ],
@@ -303,7 +303,7 @@
         }
       },
       "status": {}
-    },
+    }
   ],
   "parameters": [],
   "labels": {
