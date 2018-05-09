@@ -112,7 +112,7 @@
         }
       },
       "spec": {
-        "host": "lazar.${ROUTES_BASENAME}",
+        "host": "https://lazar-rest.prod.openrisknet.org",
         "to": {
           "kind": "Service",
           "name": "lazar-rest"
