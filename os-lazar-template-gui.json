@@ -290,7 +290,7 @@
       "kind": "Route",
       "apiVersion": "v1",
       "metadata": {
-        "name": "my",
+        "name": "lazar-gui",
         "annotations": {
           "kubernetes.io/tls-acme": "true"
         }
