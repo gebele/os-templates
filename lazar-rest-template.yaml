@@ -41,15 +41,15 @@ objects:
       type: Recreate
       resources: {}
     triggers:
-    - type: ConfigChange
-    - imageChangeParams:
-        automatic: true
-        containerNames:
-          - lazar-rest
-        from:
-          kind: ImageStreamTag
-          name: 'lazar-rest:latest'
-      type: ImageChange
+      - type: ConfigChange
+      - imageChangeParams:
+          automatic: true
+          containerNames:
+            - lazar-rest
+          from:
+            kind: ImageStreamTag
+            name: 'lazar-rest:latest'
+        type: ImageChange
     replicas: 1
     selector:
       name: lazar-rest
