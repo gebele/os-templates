@@ -106,4 +106,5 @@ objects:
       name: lazar-rest
     tls:
       termination: edge
+      insecureEdgeTerminationPolicy: Redirect
   status: {}
