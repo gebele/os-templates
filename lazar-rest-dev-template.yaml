@@ -100,7 +100,7 @@ objects:
     annotations:
       kubernetes.io/tls-acme: 'true'
   spec:
-    host: lazar.prod.openrisknet.org
+    host: lazar.dev.openrisknet.org
     to:
       kind: Service
       name: lazar-rest
