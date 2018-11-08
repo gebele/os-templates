@@ -70,6 +70,15 @@ objects:
           securityContext:
             capabilities: {}
             privileged: false
+          readinessProbe:
+            failureTreshold: 8
+            httpGet:
+              path: "/"
+              port: 8088
+              scheme: "HTTP"
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 4
         restartPolicy: Always
         dnsPolicy: ClusterFirst
   status: {}
@@ -98,7 +107,7 @@ objects:
   metadata:
     name: lazar
     annotations:
-      kubernetes.io/tls-acme: 'true'
+      kubernetes.io/tls-acme: 'false'
   spec:
     host: lazar.dev.openrisknet.org
     to:
